@@ -14,4 +14,5 @@ Stock market data will be web scrapped from Yahoo Finance using BS
 2.What are some of the visible trends?
 3.Predicted vs Actual of market volume, highs and lows, and opening and closing prices
 
-## Tools: Beautiful Soup, Pandas, Flask, D3.js, MatplotLib, SciKit Learn and TensorFlow
+## Tools:
+Beautiful Soup, Pandas, SQLAlchemy, Flask, D3.js, MatplotLib, SciKit-Learn
