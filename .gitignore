@@ -3,3 +3,6 @@
 
 # vscode settings folder
 .vscode/
+
+# config
+config.py
