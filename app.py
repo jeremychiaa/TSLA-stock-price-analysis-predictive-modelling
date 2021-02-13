@@ -11,6 +11,14 @@ from flask import Flask, render_template
 database_path = "./sqlite_db/stock_market_sqlite.db"
 engine = create_engine(f"sqlite:///{database_path}")
 
+# reflect an existing database into a new model
+Base = automap_base()
+# reflect the tables
+Base.prepare(engine, reflect=True)
+
+# Save references to each table
+Tesla = Base.classes.tesla
+
 # Flask set up and routes
 
 app = Flask(__name__)
@@ -29,7 +37,7 @@ def welcome():
         f"/api/v1.0/gme<br/>"
     )
 
-@app.route("/api/v1.0/tsla")
+@app.route("/api/v1.0/tsla-actual")
 def tsla():
     # Create session from Python to database
     session = Session(engine)
@@ -50,8 +58,7 @@ def tsla():
         tsla_dict["adj_close"] = adj_close
         tsla_dict["volume"] = volume
         tsla_stock.append(tsla_dict)
-    
-    session.close()
+
     
     return jsonify(tsla_stock)
 
