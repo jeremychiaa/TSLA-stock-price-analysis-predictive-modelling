@@ -1,3 +1,8 @@
+import datetime as dt
+import numpy as np
+import pandas as pd
+from fbprophet import Prophet
+import plotly.graph_objs as go
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
@@ -8,8 +13,21 @@ from flask import Flask, render_template
 
 # Database setup
 
-database_path = "./sqlite_db/stock_market_sqlite.db"
-engine = create_engine(f"sqlite:///{database_path}")
+engine = create_engine("sqlite:///../sqlite_db/stock_market_sqlite.db")
+
+# reflect an existing database into a new model
+Base = automap_base()
+
+# reflect the tables
+Base.prepare(engine, reflect=True)
+
+# Save references to each table
+tesla = Base.classes.TSLA
+microsoft = Base.classes.MSFT
+gamestop = Base.classes.GME
+
+# Create session (link) from Python to the DB
+session = Session(engine)
 
 # Flask set up and routes
 
