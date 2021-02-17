@@ -1,0 +1,39 @@
+main {
+    padding: 50px;
+    padding-top: 100px;
+    background-color: whitesmoke;
+  }
+  
+main .card {
+    background-color: white;
+}
+
+main .card-body {
+    background-color: white;
+}
+
+#img {
+    display: inline-block;
+}
+
+#nav-margin {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    background-color: #e3e3e3;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card mb-3 {
+    background-color: white;
+}
+
+.col-md-8 {
+    background-color:white;
+}
