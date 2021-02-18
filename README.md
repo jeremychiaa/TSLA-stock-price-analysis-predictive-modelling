@@ -1,18 +1,31 @@
-# stock-price-analysis-predictive-modelling
+# Stock Price Analysis and Predictive Modelling
+
+## Site Deployed on GitHub Pages:
+https://jeremychiaa.github.io/stock-price-analysis-predictive-modelling/templates/index.html
 
 ## Title of Research:
 Stock Price Analysis and Predictive Modelling – Machine Learning Project
 
 ## Objective:
-Aim is to the build the stock price prediction model using various stock price and develop multiple dashboards and layer stock datasets for comparison. The goal is to provide insight to future stock opening and closing prices and predict the optimal periods of when to buy and sell by comparing and analysing the predicted vs actual of market volume, high and lows and opening and closing prices via visualisations through multiple interactive dashboards.
-
-## Data Collection:
-Stock market data will be web scrapped from Yahoo Finance using BS
+- Build a Stock Price Prediction Model using Tesla, Microsoft and GameStop
+- Develop multiple Dashboards and layer stock market datasets for comparison
+- Provide insight to future opening and closing prices
+- Comparing Predicted vs Actual of Market Volume, Highs and Lows, Opening and Closing prices via interactive dashboards
 
 ## Research Questions:
 1.When is the most optimal period to buy and sell?
 2.What are some of the visible trends?
 3.Predicted vs Actual of market volume, highs and lows, and opening and closing prices
 
+## Data Collection:
+All of Stock Market Data was web scraped via Yahoo Finance package in Python
+
+## Machine Learning Model used:
+FB Prophet
+
+## About Facebook's Prophet
+- An open-source package (for both Python and R) for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects
+- It works best with time series that have strong seasonal effects and several seasons of historical data.
+
 ## Tools:
-Beautiful Soup, Pandas, SQLAlchemy, Flask, D3.js, MatplotLib, SciKit-Learn
+Beautiful Soup, SQLite DB, Python: Pandas and MatlotLib, Plotly, Tableau, BootStrap, CSS
