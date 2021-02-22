@@ -18,19 +18,20 @@
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a id="nav-margin" class="navbar-brand" href="index.html">Stock Price Analysis Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="predicted_vs_actual.html">Predicted vs Actual</a>
-            <a class="nav-item nav-link" href="prophet_forecast.html">Prophet Forecast</a>
-            <a class="nav-item nav-link" href="candlechart_comparison.html">Candlechart Comparison</a>
-            <a class="nav-item nav-link" href="volume_comparison.html">Volume Comparison</a>
-          </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+                <a class="nav-item nav-link" href="predicted_vs_actual.html">Predicted vs Actual</a>
+                <a class="nav-item nav-link" href="prophet_forecast.html">Prophet Forecast</a>
+                <a class="nav-item nav-link" href="candlechart_comparison.html">Candlechart Comparison</a>
+                <a class="nav-item nav-link" href="volume_comparison.html">Volume Comparison</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12">
         <div class="card mb-3">
@@ -38,7 +39,8 @@
                 <div class="card-body">
                     <div class="col-8">
                         <h2>How were the future prices predicted?</h2>
-                        <p>Used all the historical data to fit the model and then asked the model to predict future values i.e. the stock price for the next year.</p>
+                        <p>Used all the historical data to fit the model and then asked the model to predict future
+                            values i.e. the stock price for the next year.</p>
                     </div>
                     <div class="col-4">
 
@@ -48,79 +50,93 @@
         </div>
 
         <br>
-        <div class="card mb-3">
-            <h3>$TSLA Prophet Forecast</h3>
-            <div class='tableauPlaceholder' id='viz1613568978331' style='position: relative'><noscript><a href='#'><img
-                            alt=' '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en' />
-                </object></div>
-            <script
-                type='text/javascript'>                    var divElement = document.getElementById('viz1613568978331'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <h3>$TSLA Prophet Forecast</h3>
+                    <div class='tableauPlaceholder' id='viz1613568978331' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;TeslaProphetForecast&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1613568978331'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <h3>$MSFT Prophet Forecast</h3>
+                    <div class='tableauPlaceholder' id='viz1613622067167' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name'
+                                value='StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1613622067167'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
 
-        <div class="card mb-3">
-            <h3>$MSFT Prophet Forecast</h3>
-            <div class='tableauPlaceholder' id='viz1613622067167' style='position: relative'><noscript><a href='#'><img
-                            alt=' '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;MicrosoftProphetForecast&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-GB' />
-                </object></div>
-            <script
-                type='text/javascript'>                    var divElement = document.getElementById('viz1613622067167'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        </div>
-
-        <div class="card mb-3">
-            <h3>$GME Prophet Forecast</h3>
-            <div class='tableauPlaceholder' id='viz1613622109828' style='position: relative'><noscript><a href='#'><img
-                            alt=' '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;GMEProphetForecast&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='StockMarketAnalysis_16134652672290&#47;GMEProphetForecast' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;GMEProphetForecast&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-GB' />
-                </object></div>
-            <script
-                type='text/javascript'>                    var divElement = document.getElementById('viz1613622109828'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <h3>$GME Prophet Forecast</h3>
+                    <div class='tableauPlaceholder' id='viz1613622109828' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;GMEProphetForecast&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='StockMarketAnalysis_16134652672290&#47;GMEProphetForecast' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StockMarketAnalysis_16134652672290&#47;GMEProphetForecast&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1613622109828'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
