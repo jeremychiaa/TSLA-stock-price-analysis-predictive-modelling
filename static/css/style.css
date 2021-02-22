@@ -37,3 +37,12 @@ main .card-body {
 .col-md-8 {
     background-color:white;
 }
+
+.viz-size {
+    height: 956px;
+    width: 904px;
+}
+
+#format {
+    padding: 0px;
+}
