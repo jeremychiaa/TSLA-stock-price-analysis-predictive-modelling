@@ -39,10 +39,14 @@ main .card-body {
 }
 
 .viz-size {
-    height: 956px;
-    width: 904px;
+    height: 1200px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #format {
-    padding: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
